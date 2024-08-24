@@ -21,4 +21,4 @@ document.addEventListener('DOMContentLoaded', () => {
     forwardButton.addEventListener('click', () => {
         video.currentTime += 25;
     });
-}
+});
