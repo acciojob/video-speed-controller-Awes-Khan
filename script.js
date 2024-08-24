@@ -12,3 +12,14 @@ const inputs = document.querySelectorAll('.controls input');
     rewindButton.addEventListener('click', () => {
         video.currentTime -= 10;
     });
+
+    const playPauseButton = document.getElementById('play-pause');
+    playPauseButton.addEventListener('click', () => {
+        if (video.paused) {
+            video.play();
+            playPauseButton.textContent = '❚ ❚'; 
+        } else {
+            video.pause();
+            playPauseButton.textContent = '►'; 
+        }
+    });
