@@ -8,8 +8,7 @@ const inputs = document.querySelectorAll('.controls input');
     inputs.forEach(input => input.addEventListener('change', handleUpdate));
     inputs.forEach(input => input.addEventListener('mousemove', handleUpdate));
 
-    const rewindButton = document.getElementById('rewind');
-    rewindButton.addEventListener('click', () => {
+    document.getElementById('rewind').addEventListener('click', () => {
         video.currentTime -= 10;
     });
 
